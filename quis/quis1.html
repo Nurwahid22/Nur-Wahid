@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Favoritku</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347; /* Warna latar belakang header */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 50px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            width: 100;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        footer h3 {
+            margin-top: 0;
+        }
+        footer p, footer form {
+            margin: 10px 0;
+        }
+        footer form label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer form input[type="text"], 
+        footer form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer form input[type="radio"], 
+        footer form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        footer div.social-icons {
+            margin-top: 15px;
+        }
+        footer div.social-icons a img {
+            margin: 0 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://lh5.googleusercontent.com/p/AF1QipN3lO9M0DvvD75a2-2hP_TXJJW6YfZNrpKKX1Ui=w500-h500-k-no"Logo Restoran"> <!-- Ganti "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngaaa.com%2Fdetail%2F2795547&psig=AOvVaw1XQCBpRZ_Tg_N1QMFDlr_m&ust=1731742347684000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiBw47p3YkDFQAAAAAdAAAAABAE" dengan path logo Anda -->
+        <h1>PAREWA</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Parewa</h2>
+            <p>Restoran ini menawarkan hidangan spesial yang terbuat dari bahan-bahan segar dan berkualitas. Kami berkomitmen untuk memberikan pengalaman kuliner terbaik kepada setiap pelanggan.</p>
+            <img src="https://lh5.googleusercontent.com/p/AF1QipN3lO9M0DvvD75a2-2hP_TXJJW6YfZNrpKKX1Ui=w500-h500-k-no" alt="Gambar Restoran" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://scontent.fcgk22-1.fna.fbcdn.net/v/t39.30808-6/309896290_517558953707257_1858621285732233381_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=wPkhEf0PBDgQ7kNvgGGav6n&_nc_zt=23&_nc_ht=scontent.fcgk22-1.fna&_nc_gid=ACaDfF_jK55ykcPVCBfrni5&oh=00_AYCWEI9KYOpgrkRPfWsfvw1143rehhjLWfj5jzSz2eiiOg&oe=673CBE07" alt="Mie Abuih" width="100"></td>
+                        <td>Mie Abuih</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://asset.kompas.com/crops/2n5YA32FK8u-lhUSE-pEXRatRBc=/0x0:1000x667/750x500/data/photo/2019/12/09/5dee4f6a9e1dd.jpg" alt="kentang goreng" width="100"></td>
+                        <td>Kentang Goreng</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2024/02/18/chicken-nugget-3915743510.png" alt="Nuget Goreng" width="100"></td>
+                        <td>Nuget Goreng</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img2.pngdownload.id/20231027/erb/transparent-cup-of-coffee-coffee-cup-with-heart-shape-contrasting-colors-1711045090129.webp" alt="Kopi Asik" width="100"></td>
+                        <td>Kopi Asik</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                </tbody>
+            </table>
+	    
+	      <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Minuman</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cbe2d3b7-e134-4423-abc5-4934742bc18a_Go-Biz_20210806_201017.jpeg" alt="Kukubima Susu" width="100"></td>
+                        <td>Kukubima Susu</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://image.popmama.com/content-images/post/20240130/Resep%20teh%20talua%20%28cover%29-RNLjM1SpRrY9HUXY6FlSYiUTqAvCvW8K.jpg" alt="Teh Talua" width="100"></td>
+                        <td>Teh Talua</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://bandungmu.com/wp-content/uploads/2022/04/resep-es-cappucino-cincau-gula-merah.png" alt="Es Capucino" width="100"></td>
+                        <td>Es Capucino</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img-global.cpcdn.com/recipes/e0c3f7618ba86c2a/680x482cq70/susu-red-velvet-foto-resep-utama.webp" alt="Red Velvet" width="100"></td>
+                        <td>Red Velvet</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <ol>
+                <li>"Makanan di sini luar biasa, pelayanan cepat dan ramah!" – Andi</li>
+                <li>"Tempat yang sempurna untuk nongkrong sama temen-temen, dan kive music nya sangat bagus banget." – Lila</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Alamat:  Jl. Bandar Purus No.17, Padang Pasir, Kec. Padang Bar., Kota Padang, Sumatera Barat</p>
+        <p>Telepon: (021) 12345678 | Email: info@parewacoffe.com</p>
+        
+        <!-- Formulir Reservasi -->
+        <h3>Formulir Reservasi</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Tanggal Reservasi:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label>Jumlah Tamu:</label>
+            <input type="radio" id="2pax" name="guests" value="2" required> 2 Orang<br>
+            <input type="radio" id="4pax" name="guests" value="4"> 4 Orang<br>
+            <input type="radio" id="morepax" name="guests" value="more"> Lebih dari 4 Orang<br><br>
+
+            <input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat dan ketentuan<br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tautan Media Sosial -->
+        <div class="social-icons">
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <a href="https://www.facebook.com/parewacoffe/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/parewacoffee/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/parewacoffe/" target="_blank">
+                <img src="https://www.unukaltim.ac.id/wp-content/uploads/2019/12/logo-twitter-png-47448-600x600.png" alt="Twitter" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <h3>Lokasi Kami</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2799241216667!2d100.35369527585648!3d-0.9412759353482032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b9ccfc667847%3A0xe9ae60f31fcaf923!2sParewa%20Coffee%20Bandar%20Purus!5e0!3m2!1sid!2sid!4v1731659591088!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
